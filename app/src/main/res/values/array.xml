@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="status">
+        <item>Select Option</item>
+        <item>All</item>
+        <item>Pending for Supply</item>
+        <item>Partially Completed</item>
+        <item>Completed</item>
+    </string-array>
+
+</resources>

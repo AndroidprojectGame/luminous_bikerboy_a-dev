@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.acer.bikerboy">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/bb_logo1"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".VerifyOTPActivity"
+            android:label="@string/title_activity_verify_otp"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HomePageActivity"
+            android:label="@string/title_activity_home_page"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NewOrderActivity"
+            android:label="@string/title_activity_home_page"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".SelectOrderActivity"
+            android:label="@string/title_activity_home_page"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UpdateOrderActivity"
+            android:label="@string/title_activity_home_page"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AchievementActivity"
+            android:label="@string/title_activity_achievement"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NewRetailerActivity"
+            android:label="@string/title_activity_new_retailer"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".RetailerActivity"
+            android:label="@string/title_activity_retailer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RetailerListActivity"
+            android:label="@string/title_activity_retailer_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ViewRetailerActivity"
+            android:label="@string/title_activity_retailser_data"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".RetailerDetailsActivity" />
+        <activity android:name=".SearchAllActivity" />
+        <activity android:name=".TestSoap"></activity>
+    </application>
+
+</manifest>

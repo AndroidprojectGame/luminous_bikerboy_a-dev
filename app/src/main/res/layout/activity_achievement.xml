@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <include
+        layout="@layout/toolbar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:id="@+id/activity_new_order_ll_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/toolbar"
+        android:weightSum="1" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Select Month"
+            android:id="@+id/textView"
+            android:layout_weight="0.5"
+            android:layout_below="@+id/toolbar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textStyle="bold"
+            android:textColor="@color/header_color"/>
+
+        <TextView
+            android:id="@+id/tvmonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="MM/YYYY"
+            android:textColor="@color/header_color"
+            android:textColorHint="@color/header_color"
+            android:padding="4dp"
+            android:layout_weight="0.5"
+            android:onClick="selectDate"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_centerHorizontal="true" />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tableItemList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/activity_new_order_ll_date">
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:gravity="left|center"
+                android:textColor="@color/header_color"
+                android:layout_weight="0.25"
+                android:lines="3"
+                android:text="\n ITEMS"
+                android:background="@drawable/cell_shape"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"></TextView>
+
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:padding="1dp"
+                android:lines="3"
+                android:gravity="center"
+                android:textColor="@color/header_color"
+                android:layout_weight="0.24"
+                android:text="\nTARGET"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+        <TableRow
+            android:id="@+id/tableRow9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.51"
+            android:weightSum="1">
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            <TableRow
+                android:id="@+id/tableRow7"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:weightSum="1"
+                android:layout_weight="0.50">
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:padding="1dp"
+                android:textColor="@color/header_color"
+                android:layout_weight="1"
+                android:text="ACHIEVEMENT"
+                android:gravity="center"
+                android:visibility="visible"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow8"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.50"
+                android:weightSum="1">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:padding="1dp"
+                android:textColor="@color/header_color"
+                android:layout_weight="0.51"
+                android:text="REQUIRED"
+                android:gravity="center"
+                android:visibility="visible"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:padding="1dp"
+                android:textColor="@color/header_color"
+                android:layout_weight="0.49"
+                android:text="SUPPLIED"
+                android:gravity="center"
+                android:visibility="visible"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+            </TableRow>
+            </LinearLayout>
+            </TableRow>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/tvFan"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:padding="1dp"
+                android:textColor="@color/header_color"
+                android:layout_weight="0.25"
+                android:text=" Fan(Nos.)"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+            <TextView
+                android:id="@+id/tvFanReq"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:padding="5dp"
+                android:gravity="center"
+                android:textColor="@color/header_color"
+                android:editable="false"
+                android:layout_weight="0.24"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+            <EditText
+                android:id="@+id/etFanPen"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:padding="5dp"
+                android:gravity="center"
+                android:maxLength="6"
+                android:editable="false"
+                android:visibility="visible"
+                android:textColor="@color/header_color"
+                android:layout_weight="0.26"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium"></EditText>
+
+            <TextView
+                android:id="@+id/tvFanSup"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:padding="5dp"
+                android:gravity="center"
+                android:textColor="@color/header_color"
+                android:editable="false"
+                android:layout_weight="0.25"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/tvWire"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:padding="1dp"
+                android:textStyle="bold"
+                android:textColor="@color/header_color"
+                android:layout_weight="0.25"
+                android:text=" Wire(INR)"
+                android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+            <TextView
+                android:id="@+id/tvWireReq"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:padding="5dp"
+                android:gravity="center"
+                android:textColor="@color/header_color"
+                android:editable="false"
+                android:layout_weight="0.24"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+            <EditText
+                android:id="@+id/etWirePen"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:padding="5dp"
+                android:gravity="center"
+                android:maxLength="6"
+                android:editable="false"
+                android:visibility="visible"
+                android:textColor="@color/header_color"
+                android:layout_weight="0.26"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium"></EditText>
+
+            <TextView
+                android:id="@+id/tvWireSup"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:padding="5dp"
+                android:gravity="center"
+                android:textColor="@color/header_color"
+                android:editable="false"
+                android:layout_weight="0.25"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/tvLight"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:padding="1dp"
+                android:textColor="@color/header_color"
+                android:textStyle="bold"
+                android:layout_weight="0.25"
+                android:text=" Light(INR)"
+                android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+            <TextView
+                android:id="@+id/tvLightReq"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:padding="5dp"
+                android:gravity="center"
+                android:textColor="@color/header_color"
+                android:editable="false"
+                android:layout_weight="0.24"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+            <EditText
+                android:id="@+id/etLightPen"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:padding="5dp"
+                android:gravity="center"
+                android:maxLength="6"
+                android:editable="false"
+                android:visibility="visible"
+                android:textColor="@color/header_color"
+                android:layout_weight="0.26"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium"></EditText>
+
+            <TextView
+                android:id="@+id/tvLightSup"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:padding="5dp"
+                android:gravity="center"
+                android:textColor="@color/header_color"
+                android:editable="false"
+                android:layout_weight="0.25"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

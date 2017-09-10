@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <include
+        layout="@layout/toolbar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:visibility="visible"
+        android:layout_below="@+id/toolbar"
+        android:weightSum="1" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.35"
+            android:text=" Select "
+            android:gravity="left"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_gravity="center"
+            android:textColor="@color/header_color"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.65"
+            android:gravity="left"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbdist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/header_color"
+                android:text="Distributor" />
+
+            <RadioButton
+                android:id="@+id/rbretail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/header_color"
+                android:text="Retailer" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout2"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:id="@+id/linearLayoutChoose">
+
+    <LinearLayout
+        android:id="@+id/activity_new_order_ll_distributor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:layout_weight="1"
+        android:weightSum="1" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.35"
+            android:text=" Distributor: "
+            android:textColor="@color/header_color"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/activity_new_order_dist_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.65" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/activity_new_order_ll_retailer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:layout_weight="1"
+        android:weightSum="1" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.35"
+            android:text=" Retailer: "
+            android:textColor="@color/header_color"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etRetailers"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="0.65"
+            android:background="#FFFFFF"
+            android:drawableLeft="@drawable/search_icon"
+            android:drawablePadding="10dp"
+            android:hint="Search Retailers"
+            android:padding="5dp"
+            android:imeOptions="actionSearch"
+            android:visibility="visible"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/text_color_profile_grey" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/search_icon"
+            android:background="#FFFFFF"
+            android:visibility="gone"
+            android:padding="8dp"
+            android:onClick="search"
+            android:layout_weight="0.05"
+            android:id="@+id/btsearch" />
+
+        <Spinner android:id="@+id/spinnerRetail"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:paddingLeft="5dp"
+            android:layout_weight="0.60"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/activity_new_order_ll_beat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linearLayoutChoose"
+        android:weightSum="1" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.35"
+            android:text=" Select Status: "
+            android:textColor="@color/header_color"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/activity_new_order_status_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.65"
+            android:entries="@array/status" />
+    </LinearLayout>
+
+  <!--  <LinearLayout
+        android:id="@+id/activity_new_order_ll_retailer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/activity_new_order_ll_beat"
+        android:weightSum="1" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.45"
+            android:text="Choose Retailer: "
+            android:textColor="@color/header_color"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/activity_new_order_retailer_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.55"
+            android:entries="@array/retailer_entries" />
+    </LinearLayout>  -->
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:padding="10dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/button2"
+        android:onClick="displayList"
+        android:background="@drawable/login_button_bg"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_below="@+id/activity_new_order_ll_beat"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/activity_new_order_ll_pending_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/button2"
+        android:weightSum="1"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="List Of Orders"
+            android:gravity="center"
+            android:background="#DEDEDE"
+            android:textColor="@color/header_color"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listView"
+            android:background="#DEDEDE"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="4dp"
+            android:padding="8dp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

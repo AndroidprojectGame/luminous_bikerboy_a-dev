@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:id="@+id/tableItemList"
+        android:layout_width="match_parent"
+        android:stretchColumns="*"
+        android:layout_height="wrap_content">
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Order Id"
+            android:textStyle="bold"
+            android:background="@drawable/cell_shape"
+            android:padding="5dp"
+            android:textColor="@color/header_color"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_weight="0.34"
+            android:gravity="center"
+            android:id="@+id/tvOrder" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Beat"
+            android:background="@drawable/cell_shape"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/header_color"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_weight="0.33"
+            android:gravity="center"
+            android:id="@+id/tvBeat" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Retailer"
+            android:background="@drawable/cell_shape"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/header_color"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_weight="0.33"
+            android:gravity="center"
+            android:id="@+id/tvRetailer" />
+
+    </TableRow>
+    </TableLayout>
+</LinearLayout>

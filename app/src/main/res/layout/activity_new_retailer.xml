@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <include
+        layout="@layout/toolbar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Beat Name"
+                android:textStyle="bold"
+                android:textColor="@color/header_color"
+                android:layout_weight="0.45"
+                android:id="@+id/tvBeat" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Beat Name"
+                android:maxLines="10"
+                android:enabled="false"
+                android:inputType="textMultiLine"
+                android:textColor="@color/header_color"
+                android:textColorHint="@color/header_color"
+                android:layout_weight="0.55"
+                android:id="@+id/etBeat" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textStyle="bold"
+            android:textColor="@color/header_color"
+            android:layout_weight="0.45"
+            android:id="@+id/textView" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:inputType="text"
+            android:digits="ABCDEFGHIJ‌​KLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
+            android:textColor="@color/header_color"
+            android:textColorHint="@color/header_color"
+            android:layout_weight="0.55"
+            android:id="@+id/etName" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Contact Person"
+            android:textStyle="bold"
+            android:textColor="@color/header_color"
+            android:id="@+id/textView2"
+            android:layout_weight="0.45" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:digits="ABCDEFGHIJ‌​KLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
+            android:hint="Contact Person"
+            android:textColor="@color/header_color"
+            android:textColorHint="@color/header_color"
+            android:layout_weight="0.55"
+            android:id="@+id/etCPerson" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Phone No."
+            android:textStyle="bold"
+            android:textColor="@color/header_color"
+            android:layout_weight="0.45"
+            android:id="@+id/textView4" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:hint="Phone No."
+            android:maxLength="10"
+            android:textColor="@color/header_color"
+            android:textColorHint="@color/header_color"
+            android:layout_weight="0.55"
+            android:id="@+id/etPhone" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:textStyle="bold"
+            android:textColor="@color/header_color"
+            android:layout_weight="0.45"
+            android:id="@+id/textView5" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/etAddr"
+            android:maxLines="10"
+            android:inputType="textMultiLine"
+            android:textColor="@color/header_color"
+            android:textColorHint="@color/header_color"
+            android:hint="Address"
+            android:layout_weight="0.55" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="City"
+            android:textStyle="bold"
+            android:textColor="@color/header_color"
+            android:layout_weight="0.45"
+            android:id="@+id/textView6" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/etCity"
+            android:textColor="@color/header_color"
+            android:textColorHint="@color/header_color"
+            android:hint="City"
+            android:inputType="text"
+            android:digits="ABCDEFGHIJ‌​KLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:layout_weight="0.55" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="State"
+            android:textStyle="bold"
+            android:textColor="@color/header_color"
+            android:layout_weight="0.45"
+            android:id="@+id/textView7" />
+
+        <Spinner
+            android:id="@+id/spstate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.55" />
+     <!--   <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/etState"
+            android:textColor="@color/header_color"
+            android:textColorHint="@color/header_color"
+            android:hint="State"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:layout_weight="0.55" />  -->
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Pin Code"
+            android:textStyle="bold"
+            android:textColor="@color/header_color"
+            android:layout_weight="0.45"
+            android:id="@+id/textView8"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/etPin"
+            android:hint="Pin Code"
+            android:inputType="number"
+            android:maxLength="6"
+            android:textColor="@color/header_color"
+            android:textColorHint="@color/header_color"
+            android:layout_weight="0.55"/>
+
+    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/activity_new_order_ll_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/activity_new_order_ll"
+            android:weightSum="1" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Date Of Joining"
+                android:layout_weight="0.45"
+                android:textStyle="bold"
+                android:textColor="@color/header_color"/>
+
+            <TextView
+                android:id="@+id/tvJoinDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="MM/DD/YYYY"
+                android:textColor="@color/header_color"
+                android:textColorHint="@color/header_color"
+                android:padding="4dp"
+                android:layout_weight="0.55"
+                android:onClick="selectDate" />
+
+        </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/button"
+        android:textStyle="bold"
+        android:onClick="submit"
+        android:textColor="@color/header_color"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

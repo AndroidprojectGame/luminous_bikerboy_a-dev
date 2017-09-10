@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.acer.bikerboy.RetailerListActivity"
+    tools:showIn="@layout/activity_retailer_list">
+
+    <include
+        layout="@layout/toolbar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:id="@+id/llSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:layout_below="@+id/toolbar"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/searchName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="0.5"
+            android:background="#FFFFFF"
+            android:drawableLeft="@drawable/search_icon"
+            android:drawablePadding="10dp"
+            android:hint="Name"
+            android:padding="5dp"
+            android:imeOptions="actionSearch"
+            android:visibility="visible"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/text_color_profile_grey" />
+
+        <EditText
+            android:id="@+id/searchNum"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="0.5"
+            android:inputType="number"
+            android:maxLength="10"
+            android:digits="0123456789"
+            android:background="#FFFFFF"
+            android:drawableLeft="@drawable/search_icon"
+            android:drawablePadding="10dp"
+            android:hint="Mobile No."
+            android:padding="5dp"
+            android:imeOptions="actionSearch"
+            android:visibility="visible"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/text_color_profile_grey" />
+
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listView"
+        android:layout_marginTop="10dp"
+        android:background="#DEDEDE"
+        android:layout_below="@+id/llSearch"
+        android:divider="#FFFFFF"
+        android:dividerHeight="4dp"
+        android:padding="8dp" />
+
+</RelativeLayout>

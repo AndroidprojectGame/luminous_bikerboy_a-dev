@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\CHAUDHARY\.android\build-cache\f5dccedab507b2b315b6904b8f0914f0034b86f9\output\jars\libs\internal_impl-23.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="D:\AndroidDelhi\luminous_bikerboy_a-dev\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.1_fcd607d7bbee71388eacc8fbdefac5364ceeae2c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\CHAUDHARY\.android\build-cache\f5dccedab507b2b315b6904b8f0914f0034b86f9\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="D:\AndroidDelhi\luminous_bikerboy_a-dev\app\build\intermediates\pre-dexed\debug\classes_e5dcbd9a2360b09a82dd3429fa848049390f2626.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\CHAUDHARY\.android\build-cache\fbafc61ce89c6eaccacc949202cd22e05b16c04d\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
+        <dex dex="D:\AndroidDelhi\luminous_bikerboy_a-dev\app\build\intermediates\pre-dexed\debug\classes_f9a026e6db17df393a983bd57478f0366a9e5120.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\adt-bundle-windows-x86-20130729\sdk1\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="D:\AndroidDelhi\luminous_bikerboy_a-dev\app\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.0.2_213731700a60be6e60834857a519a81539070748.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\CHAUDHARY\.android\build-cache\38bec89a55a3a20851cc5cbc28f77ee3b6d42fef\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="D:\AndroidDelhi\luminous_bikerboy_a-dev\app\build\intermediates\pre-dexed\debug\classes_f0e138eab2b11b799161471fddf59d34e8e854d0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\CHAUDHARY\.android\build-cache\3010997b7b89ad57ca3e76a175a126277f74999d\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
+        <dex dex="D:\AndroidDelhi\luminous_bikerboy_a-dev\app\build\intermediates\pre-dexed\debug\classes_5a6a2986131e8866f06cd5c00f684274a43d2d4b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\adt-bundle-windows-x86-20130729\sdk1\extras\android\m2repository\com\android\support\support-annotations\23.1.1\support-annotations-23.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="D:\AndroidDelhi\luminous_bikerboy_a-dev\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.1_24ffca2a9a222cbb9443ee43725abc53def1ceb7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\CHAUDHARY\.android\build-cache\f671504b13ea33fb14f2d43a539b8c5212c8fea7\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="D:\AndroidDelhi\luminous_bikerboy_a-dev\app\build\intermediates\pre-dexed\debug\classes_3e0cacd9445c54975423ae3f100ca1ce9efa4c1c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\AndroidDelhi\luminous_bikerboy_a-dev\app\libs\ksoap2-android-assembly-3.5.0-jar-with-dependencies.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="21cd457fa3bf24fcb2ab1e3514930a326f5c5bb6">
+        <dex dex="D:\AndroidDelhi\luminous_bikerboy_a-dev\app\build\intermediates\pre-dexed\debug\ksoap2-android-assembly-3.5.0-jar-with-dependencies_fd26fc44ab3742bdca611b688bfb0deeaea4e723.jar" />
+    </item>
+
+</items>
